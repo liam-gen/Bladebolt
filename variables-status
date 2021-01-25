@@ -1,0 +1,18 @@
+Variables a ajouter :
+
+money = 0
+blacklist = false
+
+
+
+
+
+
+
+
+
+Status :
+
+1 playing = ..help
+2 listening = $allMemberCount
+3 watching = $serverCount serveurs
