@@ -1,0 +1,7 @@
+$nomention
+$onlyIf[$argCount[$message]>=1;Veuillez écrire votre report]
+$channelSendMessage[$channelID;Votre report à bien été envoyé]
+$useChannel[ton channel support]
+$title[Report]
+$description[$username ($authorID) à envoyé ce report : $message]
+$addTimestamp
