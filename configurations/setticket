@@ -1,0 +1,6 @@
+$nomention
+$argsCheck[>1; :x: Usage : ..setticket <catégorie id>]
+$onlyPerms[manageserver;]
+$setServerVar[ticket;$message[1]]
+Catégorie de ticket définis sur <#$message>
+$channelSendMessage[$getServerVar[logs];Catégorie ticket udapte par $username]
