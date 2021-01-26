@@ -1,0 +1,6 @@
+$nomention
+$argsCheck[>1; :x: Usage : ..setlogs <salon id>]
+$onlyPerms[manageserver;]
+$setServerVar[logs;$message[1]]
+Salons de logs définis sur <#$message>
+$channelSendMessage[$message;Salons de logs définis ici par $username]
