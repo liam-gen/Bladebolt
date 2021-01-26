@@ -1,0 +1,16 @@
+$newTicket[$getServerVar[ticket];Pas de
+message;Bonjour $username
+
+Pour fermer ton ticket marque ici  dans le channel la commande ..close 
+
+
+
+Merci D'avoir crée un ticket
+
+Veullez noter tous vos problème. Notre temps de réponse devrait être d'environ 10 minutes  si nous sommes en ligne.
+**Subject**
+{subject};Le Channel ticket
+a été crée 
+{channel};**error** Veuillez  réessayer]
+$deleteIn[5s]
+$channelSendMessage[$getServerVar[logs];Nouveau ticket de $username !]
