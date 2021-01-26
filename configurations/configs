@@ -1,0 +1,9 @@
+$nomention
+$description[
+
+Logs : <#$getServerVar[logs]>
+Couleur : $getServerVar[color]
+]
+$color[$getServerVar[color]]
+$footer[$getVar[footer]]
+$title[**Configurations**]
