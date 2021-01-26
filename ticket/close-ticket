@@ -1,0 +1,5 @@
+$nomention
+$closeTicket[Vous avez fermé un ticket]
+$deleteIn[5s]
+__**✅ message supprimé dans 5 secondes!**__
+$channelSendMessage[$getServerVar[logs];🔒$username a fermer un ticket]
