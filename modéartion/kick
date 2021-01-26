@@ -1,0 +1,5 @@
+$nomention
+$onlyPerms[kick;Tu n'as pas la permission `KICK.MEMBERS`]
+$kickMention
+$channelSendMessage[$getServerVar[logs];<@$mentioned[<]> a été expulser par <@$authorID>]
+$allowMention
