@@ -1,1 +1,6 @@
-Soon ...
+$nomention
+$onlyPerms[ban;❌ Il manque la permissions : `BANIR DES MEMBRES`]
+$argsCheck[>2;❌ Format invalide : `..ban @user raison`]
+$ban
+$channelSendMessage[$channelID;✅ **Succès ! :**  <@$mentioned[<]> a été banni par <@$authorID>!]
+$allowMention
