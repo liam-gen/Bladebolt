@@ -1,0 +1,14 @@
+$nomention
+$argsCheck[>1;Veuillez faire ..roleinfo @role]
+$onlyIf[$roleExists[$mentionedRoles[<]]==true;Veuillez mentionner un rôle qui existe]
+$title[Information sur $roleName[$findRole[roleID/roleName/mention]]]
+$description[Nom : $roleName[$findRole[roleID/roleName/mention]]
+Date de création : $creationDate[$findRole[roleID/roleName/mention]]
+Couleur : $getRoleColor[$findRole[roleID/roleName/mention]]
+Identifiant : $findRole[roleID/roleName/mention]
+Mentionnable : 
+$isMentionable[$findRole[roleID/roleName/mention]]
+Position : $rolePosition[$findRole[roleID/roleName/mention]] sur $roleCount]
+$addTimestamp
+$color[$getServerVar[color]]
+$footer[$getVar[footer]]
