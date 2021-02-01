@@ -1,0 +1,13 @@
+$nomention
+$onlyIf[$argCount[$message]>=1;Veuillez écrire votre suggestion]
+$if[$channelExists[$getServerVar[suggest]]==true]
+$useChannel[$getServerVar[suggest]]
+$title[**💡-Suggestion de $username-💡**]
+$description[$message]
+$else
+$useChannel[$channelID]
+$title[Suggestion de $username]
+$description[$message]
+$endif
+$color[$getServerVar[color]]
+$footer[$getVar[footer]]
