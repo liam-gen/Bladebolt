@@ -1,0 +1,12 @@
+$nomention
+$onlyAdmin[Tu n'es pas Administrateur]
+$argsCheck[1;Veuillez faire ..setsuggest {#channel}]
+$if[$channelExists[$mentionedChannels[<]]==true]
+$setServerVar[suggest;$mentionedChannels[<]]
+$title[Configuration de la suggestion]
+$description[Le salon défini est $message]
+$else
+$setServerVar[suggest;0]
+$title[Configuration de la suggestion]
+$description[Le salon défini sera le salon où la commande sera effectuée]
+$endif
