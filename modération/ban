@@ -1,6 +1,11 @@
 $nomention
 $onlyPerms[ban;❌ Il manque la permissions : `BANIR DES MEMBRES`]
-$argsCheck[>2;❌ Format invalide : `..ban @user raison`]
-$ban
-$channelSendMessage[$channelID;✅ **Succès ! :**  <@$mentioned[<]> a été banni par <@$authorID>!]
+$argsCheck[>1;❌ Format invalide : `..ban @user`]
+$channelSendMessage[$getServerVar[logs];✅ **Succès ! :**  <@$mentioned[<]> a été banni par <@$authorID>!]
 $allowMention
+$onlyBotPerms[ban;Il me faut la permission bannir]
+$onlyIf[$userExists[$mentioned[1]]==true;Veuillez mentionner une personne existante]
+$ban[$mentioned[1]]
+$title[Bannissement]
+$description[$username à bien banni $username[$mentioned[1]]]
+$addTimestamp
