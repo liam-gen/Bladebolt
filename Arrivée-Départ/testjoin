@@ -1,0 +1,2 @@
+$nomention
+$channelSendMessage[$getServerVar[bvn];$replaceText[$replaceText[$replaceText[$getServerVar[msg];{member.name};$username;1];{member.count};$membersCount;1];{member.id};$authorID;1]]
