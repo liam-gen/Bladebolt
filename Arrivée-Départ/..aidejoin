@@ -1,7 +1,0 @@
-$nomention
-$description[
-Variables d'arrivé/départ :
-{member.name} : Nom du membre arrivant/partant
-{member.count} : Nombres de membres sur le serveur
-{member.id} : ID du membre arrivant/partant]
-$color[00ff10]
