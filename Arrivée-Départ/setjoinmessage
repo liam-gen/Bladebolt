@@ -1,0 +1,5 @@
+$nomention
+$setServerVar[msg;$message]
+$onlyAdmin[Tu dois avoir la permission administrateur pour effectuer cette commande]
+$title[Nouveau message d'arrivée :]
+$description[$replaceText[$replaceText[$replaceText[$message;{member.name};$username;1];{member.count};$membersCount;1];{member.id};$authorID;1]]
