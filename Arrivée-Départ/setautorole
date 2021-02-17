@@ -1,0 +1,5 @@
+$onlyAdmin[]
+$nomention
+$setServerVar[role;$message]
+$description[Autorôle :
+<@&$message>]
