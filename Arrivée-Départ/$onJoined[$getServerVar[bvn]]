@@ -5,3 +5,4 @@ $title[**Quelqu’un nous a rejoint**]
 $description[$replaceText[$replaceText[$replaceText[$getServerVar[msg];{member.name};$username;1];{member.count};$membersCount;1];{member.id};$authorID;1]]
 $color[00ff10]
 $giveRole[$authorID;$getServerVar[role]]
+
