@@ -1,0 +1,5 @@
+$nomention
+$onlyAdmin[Tu dois avoir la permission administrateur pour pouvoir effectuer cette commande]
+$setServerVar[bvn;$message[1]]
+
+Salon d'arrivé définis sur <#$message[1]>
