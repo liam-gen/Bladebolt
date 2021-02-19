@@ -1,0 +1,15 @@
+$authorIcon[$authorAvatar[$mentioned[1]]]
+$author[$username[$mentioned[1]]#$discriminator[$mentioned[1]]]
+$nomention
+$title[Warn]
+$color[2f3136]
+$footer[Warned par $username]
+$description[<@$mentioned[1]> a été warn pour la raison suivante : `$noMentionMessage`]
+
+$onlyPerms[kickmembers;Seul les modérateurs et administrateurs peuvent effectuer cette commande]
+$argsCheck[>1;**Usage:** `warn (user) (raison)`]
+$cooldown[10s;Tu dois encore attendre %time% avant de refaire cette commande !]
+$addTimestamp
+$setUserVar[warn;$sum[$getUserVar[warn;$mentioned[1]];1];$mentioned[1]]
+$onlyIf[$checkContains[$message;ings]==false;]
+$onlyIf[$authorID!=$mentioned[1];Tu te warn toi même !?]
