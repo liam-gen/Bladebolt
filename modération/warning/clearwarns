@@ -1,0 +1,13 @@
+$authorIcon[$authorAvatar[$mentioned[1]]]
+$author[$username[$mentioned[1]]#$discriminator[$mentioned[1]]]
+$nomention
+$title[Supression de tous les Warnings de $username[$mentioned[1]]]
+$color[#FAFC43]
+$setUserVar[warn;0;$mentioned[1]]
+$description[Les warns de <@$mentioned[1]> ont bien été réinitialisé ]
+$argsCheck[>1;**Usage:** `clearwarns (user)`]
+$cooldown[10s;Tu dois attendre %time% avant de faire cette commande!]
+$addTimestamp
+$onlyPerms[managemessages;Commande réservé aux administrateurs et modérateurs de ce serveur !]
+$onlyIf[$authorID!=$mentioned[1];Vous ne pouvez pas supprimer vos warns !]
+$onlyIf[$getUserVar[warn;$mentioned[1]]!=0;Cet utilisateur n'as pas de warns !]
