@@ -1,0 +1,8 @@
+$authorIcon[$authorAvatar[$mentioned[1]]
+$author[$username[$mentioned[1]]#$discriminator[$mentioned[1]]]
+$nomention
+$title[Warnings de $username[$mentioned[1]]]
+$color[#FAFC43]
+$description[$username[$mentioned[1]] a `$getUserVar[warn]` warnings]
+$addTimestamp
+$onlyPerms[managemessages;Commande réservé aux administrateurs et aux modérateurs]
