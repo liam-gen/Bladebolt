@@ -1,0 +1,17 @@
+## Enlevez le (1) !!
+
+$nomention
+$argsCheck[>4;❌ Correct usage : `..gstart (temps s/m/h) (salon) (lot)`]
+$useChannel[$mentionedChannels[1]]
+$title[**🎉 Nouveau GIVEAWAY 🎉**]
+$description[
+
+⌚ **Temps** : $message[1]
+🎁 **Lot** : $message[3] $message[4] $message[5] $message[6] $message[7] $message[8] $message[9] $message[10]
+]
+$footer[Hosted by $username]
+$addTimestamp
+$addReactions[🎉]
+$botTyping
+$editEmbedIn[$message[1];GIVEAWAY ENDED;;Ce giveaway est terminé !;00ff00]
+$onlyAdmin[Tu n'as pas la permission administrateur]
