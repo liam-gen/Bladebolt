@@ -1,0 +1,15 @@
+## Enlevez (2) !!
+
+$nomention
+$replyIn[$message[1]]
+$onlyAdmin[]
+$argsCheck[>4;]
+$useChannel[$mentionedChannels[1]]
+$title[Vainqueur du giveaway]
+$description[🥇 - Le winner de ce giveaway est $randomMention !
+Lot : $message[3] $message[4] $message[5] $message[6] $message[7] $message[7] $message[8] $message[9] $message[10] ]
+$footer[$getVar[footer]]
+$botTyping
+$addReactions[🥇]
+$addTimestamp
+$color[00ff00]
