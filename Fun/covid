@@ -1,0 +1,10 @@
+$nomention
+$title[😷 Corona Test 😷]
+$description[TESTING... ATTENDEZ... $randomText[Merci de cracher dans ce pot;Nous allons vous tester par le nez,cela ne devrais pas vous faire mal.]...]
+
+
+$editIn[10s;$randomText[**RÉSULTAT DU TEST**: __NÉGATIF__.;**RÉSULTAT DU TEST**: __POSITIF__. VOUS AVEZ CONTRACTER LE VIRUS ! MERCI DE VOUS ISOLER ET DE CONTACTER LA LISTE DE VOS CONTACTS.]]
+$footer[$getVar[footer]  x  Corona virus]
+$footerIcon[$authorAvatar[700374770276892808] ]
+$color[FF0000]
+$addTimestamp
