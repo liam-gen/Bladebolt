@@ -1,0 +1,11 @@
+$nomention
+$onlyIf[$checkCondition[$message==papier]-$checkCondition[$message==pierre]-$checkCondition[$message==ciseaux]!=false-false-false;<:alors_la_non:811675102818205746> | Veuillez mettre pierre, papier ou ciseaux]
+$title[Pierre-Papier-Ciseaux(Chifoumi)]
+$description[Vous avez choisi **$replaceText[$replaceText[$replaceText[$toLowercase[$message];papier;📄 | Papier;1];pierre;🗿 | Pierre;1];ciseaux;✂ | Ciseaux;1]**
+
+Votre adversaire à choisi **$replaceText[$replaceText[$replaceText[$randomText[pierre;papier;ciseaux];papier;📄 | Papier;1];pierre;🗿 | Pierre;1];ciseaux;✂ | Ciseaux;1]**
+
+Vous avez **$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$message-$randomText[pierre;papier;ciseaux];pierre-pierre;Égalité;1];pierre-papier;Perdu;1];pierre-ciseaux;Gagné;1];papier-pierre;Gagné;1];papier-papier;Égalité;1];ciseaux-ciseaux;Égalité;1];ciseaux-pierre;Perdu;1];ciseaux-papier;fait égalité;1];papier-ciseaux;Perdu;1]**]
+$color[#11115c]
+$footer[$getVar[footer]]
+$deletecommand
