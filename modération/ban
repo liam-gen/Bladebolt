@@ -9,3 +9,7 @@ $ban[$mentioned[1]]
 $title[Bannissement]
 $description[$username à bien banni $username[$mentioned[1]]]
 $addTimestamp
+$onlyIf[$guildID!=;]
+$if[$getServerVar[logs]!=0]
+$channelSendMessage[$getServerVar[logs];$mentioned[1] à été banni par $username#$discriminator[$authorID]]
+$endif
