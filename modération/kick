@@ -1,5 +1,8 @@
 $nomention
 $onlyPerms[kick;Tu n'as pas la permission `KICK.MEMBERS`]
 $kickMention
+$if[$getServerVar[logs]!=0]
 $channelSendMessage[$getServerVar[logs];<@$mentioned[<]> a été expulser par <@$authorID>]
+$endif
 $allowMention
+$onlyIf[$guildID!=;]
