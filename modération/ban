@@ -1,15 +1,14 @@
 $nomention
-$onlyPerms[ban;❌ Il manque la permissions : `BANIR DES MEMBRES`]
-$argsCheck[>1;❌ Format invalide : `..ban @user`]
-$channelSendMessage[$getServerVar[logs];✅ **Succès ! :**  <@$mentioned[<]> a été banni par <@$authorID>!]
+$onlyPerms[ban;<:EmojiBladeboltPasContent:815645838557577226> - Il te manque la permissions : `BANIR DES MEMBRES`]
+$argsCheck[>1;<:EmojiBladeboltPasContent:815645838557577226> - Format invalide : `..ban @user`]
 $allowMention
-$onlyBotPerms[ban;Il me faut la permission bannir]
-$onlyIf[$userExists[$mentioned[1]]==true;Veuillez mentionner une personne existante]
+$onlyBotPerms[ban;<:EmojiBladeboltPasContent:815645838557577226> - Il me faut la permission bannir]
+$onlyIf[$userExists[$mentioned[1]]==true;<:EmojiBladeboltPasContent:815645838557577226> - Veuillez mentionner une personne existante]
 $ban[$mentioned[1]]
 $title[Bannissement]
-$description[$username à bien banni $username[$mentioned[1]]]
+$description[<:EmojiBladeboltPasContent:815645838557577226> - $username à bien banni $username[$mentioned[1]]]
 $addTimestamp
 $onlyIf[$guildID!=;]
 $if[$getServerVar[logs]!=0]
-$channelSendMessage[$getServerVar[logs];$mentioned[1] à été banni par $username#$discriminator[$authorID]]
+$channelSendMessage[$getServerVar[logs];<:EmojiBladeboltPasContent:815645838557577226> - $mentioned[1] à été banni par $username#$discriminator[$authorID]]
 $endif
