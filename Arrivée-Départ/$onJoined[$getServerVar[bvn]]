@@ -8,3 +8,8 @@ $endif
 $if[$getServerVar[role]!=0]
 $giveRole[$authorID;$getServerVar[role]]
 $endif
+$if[$getServerVar[raidmode]!=0]
+$kick[$authorID]
+$dm
+L'autoraid mode a été activé, vous avez été kick !
+$endif
