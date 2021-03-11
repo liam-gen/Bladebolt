@@ -1,8 +1,9 @@
+<l'erreur>` pour nous envoyer votre requête]
 $nomention
-$onlyIf[$argCount[$message]>=1;Veuillez écrire votre suggestion]
+$onlyIf[$argCount[$message]>=1;<:EmojiBladeboltPasContent:815645838557577226> - Veuillez écrire votre suggestion]
 $if[$channelExists[$getServerVar[suggest]]==true]
 $useChannel[$getServerVar[suggest]]
-$title[**💡-Suggestion de $username-💡**]
+$title[**💡 Suggestion de $username 💡**]
 $description[$message]
 $else
 $useChannel[$channelID]
@@ -11,3 +12,5 @@ $description[$message]
 $endif
 $color[$getServerVar[color]]
 $footer[$getVar[footer]]
+$deletecommand
+$onlyIf[$guildID!=;]
