@@ -1,6 +1,7 @@
 $nomention
-$argsCheck[>1; :x: Usage : ..setlogs <salon id>]
-$onlyPerms[manageserver;]
+$argsCheck[>1;<:EmojiBladeboltPasContent:815645838557577226> - Format valide : `..setlogs <salon id>`]
+$onlyPerms[manageserver;<:EmojiBladeboltPasContent:815645838557577226> - Tu n'as pas les permissions requises]
 $setServerVar[logs;$message[1]]
 Salons de logs définis sur <#$message>
-$channelSendMessage[$message;Salons de logs définis ici par $username]
+$channelSendMessage[$message;<:EmojiBladeboltOK:815646764463030293> - Salons de logs définis ici par $username]
+$onlyIf[$guildID!=;]
