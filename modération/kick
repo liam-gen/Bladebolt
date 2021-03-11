@@ -1,8 +1,9 @@
 $nomention
-$onlyPerms[kick;Tu n'as pas la permission `KICK.MEMBERS`]
+$argsCheck[1;<:EmojiBladeboltPasContent:815645838557577226> - Format valide : `..kick @user`]
+$onlyPerms[kick;<:EmojiBladeboltPasContent:815645838557577226> - Tu n'as pas la permission `KICK.MEMBERS`]
 $kickMention
 $if[$getServerVar[logs]!=0]
-$channelSendMessage[$getServerVar[logs];<@$mentioned[<]> a été expulser par <@$authorID>]
+$channelSendMessage[$getServerVar[logs];<:EmojiBladeboltPasContent:815645838557577226> - <@$mentioned[<]> a été expulser par <@$authorID>]
 $endif
 $allowMention
 $onlyIf[$guildID!=;]
