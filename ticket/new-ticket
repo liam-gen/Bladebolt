@@ -1,3 +1,4 @@
+$suppressErrors[<:EmojiBladeboltPasContent:815645838557577226> - Une erreur s'est produite lors de l'exécution de la commande - Veuillez utiliser `..error <l'erreur>` pour nous envoyer votre requête]
 $newTicket[$getServerVar[ticket];Pas de
 message;Bonjour $username
 
@@ -13,4 +14,7 @@ Veullez noter tous vos problème. Notre temps de réponse devrait être d'enviro
 a été crée 
 {channel};**error** Veuillez  réessayer]
 $deleteIn[5s]
+$if[$getServerVar[logs]!=0]
 $channelSendMessage[$getServerVar[logs];Nouveau ticket de $username !]
+$endif
+$onlyIf[$guildID!=;]
