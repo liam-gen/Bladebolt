@@ -1,12 +1,16 @@
 $nomention
-$onlyAdmin[Tu n'es pas Administrateur]
-$argsCheck[1;Veuillez faire ..setsuggest {#channel}]
+$onlyAdmin[<:EmojiBladeboltPasContent:815645838557577226> - Tu n'es pas Administrateur]
+$argsCheck[1;<:EmojiBladeboltPasContent:815645838557577226> - Format valide : `..setsuggest #channel`]
 $if[$channelExists[$mentionedChannels[<]]==true]
 $setServerVar[suggest;$mentionedChannels[<]]
 $title[Configuration de la suggestion]
-$description[Le salon défini est $message]
+$description[<:EmojiBladeboltOK:815646764463030293> - Le salon défini est $message]
 $else
 $setServerVar[suggest;0]
 $title[Configuration de la suggestion]
-$description[Le salon défini sera le salon où la commande sera effectuée]
+$description[<:EmojiBladeboltOK:815646764463030293> - Le salon défini sera le salon où la commande sera effectuée car le salon n'existe pas]
+$endif
+$onlyIf[$guildID!=;]
+$if[$getServerVar[logs]!=0]
+$channelSendMessage[$getServerVar[logs];<:EmojiBladeboltOK:815646764463030293> - $username#$discriminator[$authorID] à définis le salon de suggestion sur <#$mentionedChannels[1]>]
 $endif
