@@ -2,7 +2,7 @@ $nomention
 
 $if[$getServerVar[bvn]!=0]
 $title[**Quelqu’un nous a rejoint**]
-$description[$replaceText[$replaceText[$replaceText[$replaceText[$getServerVar[msg];{member.name};$username;1];{member.count};$membersCount;1];{member.id};$authorID;1];{member.mention;<@$authorID>;1]]
+$description[$replaceText[$replaceText[$replaceText[$replaceText[$getServerVar[msg];{member.name};$username;1];{member.count};$membersCount;1];{member.id};$authorID;1];{member.mention};<@$authorID>;1]]
 $color[00ff10]
 $endif
 $if[$getServerVar[role]!=0]
