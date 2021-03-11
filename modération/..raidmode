@@ -1,0 +1,18 @@
+$suppressErrors[<:EmojiBladeboltPasContent:815645838557577226> - Une erreur s'est produite lors de l'exécution de la commande - Veuillez utiliser `..error <l'erreur>` pour nous envoyer votre requête]
+$nomention
+$onlyAdmin[<:EmojiBladeboltPasContent:815645838557577226> - Tu n'as pas la permission d'effectuer cette commande]
+$argsCheck[>1;<:EmojiBladeboltPasContent:815645838557577226> - Format invalide : `..autoraid on/off`]
+$if[$message[1]==on]
+$setServerVar[raidmode;1]
+$title[**Système Auto-Raid**]
+$description[Le système autoraid a été activé ! Tous les nouveaux arrivants seront automatiquement kick]
+$color[00ff00]
+$footer[$getVar[footer]]
+$endif
+$if[$message[1]==off]
+$setServerVar[raidmode;0]
+$title[**Système Auto-Raid**]
+$description[Le système autoraid a été désactivé ! ]
+$color[00ff00]
+$footer[$getVar[footer]]
+$endif
