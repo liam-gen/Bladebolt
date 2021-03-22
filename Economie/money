@@ -1,0 +1,20 @@
+## Avant tout il est important de regarder rapidement dans le fichier contenant les variables !  (Vous pouvez supprimer cette ligne dans le code)
+
+$nomention 
+$suppressErrors[Une erreur s'est produite]
+$if[$message==]
+
+$title[Porte monaie de $username]
+$description[
+Tu à $getUserVar[Money]€]
+$color[0087fd]
+$footer[$getVar[footer]]
+$else
+$argsCheck[1;<:EmojiBladeboltPasContent:815645838557577226> - Tu dois mentionner un utilisateur]
+$title[Porte monaie de $username[$mentioned[1]]]
+$description[
+<@$mentioned[1;yes]> à $getUserVar[Money;$mentioned[1]]€]
+$color[0087fd]
+$footer[$getVar[footer]]
+$suppressErrors[Tu dois mentionner un utilisateur !]
+$endif
