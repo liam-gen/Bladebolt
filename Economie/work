@@ -1,0 +1,8 @@
+$nomention
+$cooldown[5h;<:EmojiBladeboltPasContent:815645838557577226> - Il faut que tu attends %time% avant de faire la commande]
+$deletecommand
+$title[Work]
+$description[Tu a reçu ton salaire
+Maintenant tu a $sum[$getUserVar[Money];100] d'argent ] 
+$color[0087fd]
+$setUserVar[Money;$sum[$getUserVar[Money];100]]
