@@ -1,0 +1,12 @@
+$nomention
+$argsCheck[>1;<:EmojiBladeboltPasContent:815645838557577226> - Mentionne un utilisateur]
+$cooldown[1h;<:EmojiBladeboltPasContent:815645838557577226> - Reviens dans %time%]
+$onlyIf[$userExists[$mentioned[<;no]]==true;<:EmojiBladeboltPasContent:815645838557577226> - Veuillez mentionner un utilisateur valide]
+$onlyIf[$mentioned[<;no]!=$authorID;<:EmojiBladeboltPasContent:815645838557577226> - Vous ne pouvez pas vous voler]
+$onlyIf[$getUserVar[Money;$mentioned[<;no]]>=$random[1;100];<:EmojiBladeboltPasContent:815645838557577226> - L'utilisateur n'a pas assez d'argent]
+$setUserVar[Money;$sub[$getUserVar[Money;$mentioned[<;no]];$replaceText[$replaceText[$checkCondition[$random[1;100]>=0];true;$random[1;100];-1];false;0;-1];$mentioned[<;no]]]
+$setUserVar[Money;$sum[$getUserVar[Money];$random[1;100]]]
+$title[Rob]
+$description[$username à voler $random[1;100]$ a $username[$mentioned[<;no]]]
+$addTimestamp
+$color[0890E9]
