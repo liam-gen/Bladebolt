@@ -1,0 +1,27 @@
+$nomention
+$setUserVar[Money;$$randomText[sum;sub][$getUserVar[Money];$message[1]]]
+
+$title[$replaceText[$replaceText[$randomText[sum;sub];sum; Winner;1];sub; Lost;1]]
+$description[Tu $replaceText[$replaceText[$randomText[sum;sub];sum; gagne **$$message[1]** !!!;1];sub; perd **$$message[1]**;1] 
+
+$replaceText[$replaceText[$randomText[sum;sub];sum;
+
+💵 | 🌟| 🤑| 💫 | 💎
+💵 | 🌟| 🤑| 💫 | 💎
+💵 | 🌟| 🤑| 💫 | 💎
+💵 | 🌟| 🤑| 💫 | 💎
+💵 | 🌟| 🤑| 💫 | 💎;1];sub;
+
+$randomText[💎;💵;🤑;💫;🌟] | $randomText[🤑;💎;🌟;💵;💎] | $randomText[💵;🌟;🤑;💫;💎] | $randomText[💵;🌟;💎;💫;🤑] | $randomText[🤑;💫;🌟;🤑;💎] 
+$randomText[🤑;💫;🌟;🤑;💎] | $randomText[💎;🌟;💎;💫;💵] | $randomText[💵;🌟;💎;💫;💵] | $randomText[💵;💎;🌟;🤑;💫] | $randomText[💵;🌟;🤑;💫;💎]
+$randomText[💵;🌟;💎;💫;🤑] | $randomText[💵;🤑;🤑;💫;💎] | $randomText[💎;💫;💵;💵;🌟] | $randomText[🤑;💎;💫;🌟;💵] | $randomText[🤑;💎;🌟;💵;💎]
+$randomText[🌟;💫;💵;💎;🤑] | $randomText[💎;🌟;🤑;💫;💎] | $randomText[🌟;💎;💵;🤑;🌟] | $randomText[🌟;💵;💎;🤑;💫] | $randomText[🤑;🌟;💎;💵;💫]
+$randomText[🤑;🌟;💎;💵;💫] | $randomText[💵;💫;🤑;💫;🌟] | $randomText[🌟;💫;🤑;💎;💵] | $randomText[💵;🌟;💎;💫;🤑] | $randomText[💎;💫;💵;💵;🌟];1]]
+$footerIcon[$authorAvatar]
+$footer[Requested By $username#$discriminator[$authorID]]
+$color[$replaceText[$replaceText[$randomText[sum;sub];sum;1bbe00;1];sub;eb0000;1]]
+$addTimestamp
+$onlyIf[$message>10000;<:EmojiBladeboltPasContent:815645838557577226> - Tu ne peux pas miser plus de $10000 ]
+$argsCheck[>1;<:EmojiBladeboltPasContent:815645838557577226> - Format invalide : `..casino (nombre)`]
+$onlyIf[$getUserVar[Money]>99;<:EmojiBladeboltPasContent:815645838557577226> - Tu as besoin **100** € pour jouer ]
+$onlyIf[$message[1]<=$getUserVar[Money;$authorID];<:EmojiBladeboltPasContent:815645838557577226> - Tu n'as pas **$$message[1]**]
