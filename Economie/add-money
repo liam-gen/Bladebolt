@@ -1,0 +1,14 @@
+$nomention
+$argsCheck[2;<:EmojiBladeboltPasContent:815645838557577226> - Format invalide `..add-money (nombre) @user`]
+$onlyAdmin[<:EmojiBladeboltPasContent:815645838557577226> - Tu n'as pas la permission administrateur]
+$title[<:deal:811674918738722816> | Ajout d'argent | <:deal:811674918738722816>]
+$description[
+Tu viens d'ajouter $$message[1] a <@$mentioned[1]> ]
+$color[00ff00]
+$footer[$getServerVar[footer]]
+
+$setUserVar[Money;$sum[$getUserVar[Money;$mentioned[1]];$message[1]];$mentioned[1]]
+
+$if[$getServerVar[logs]!=0]
+$channelSendMessage[$getServerVar[logs];$username[$mentioned[1]] à reçu $$message[1] par $username#$discriminator[$authorID]]
+$endif
