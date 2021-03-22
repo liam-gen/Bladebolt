@@ -1,0 +1,7 @@
+$nomention
+$color[$random[000000;999999]]$title[Toplist]
+$userLeaderboard[Money;asc]
+$footer[$date | $getVar[footer]]
+$color[0087fd]
+$image[https://static.wixstatic.com/media/dd5a7d_c408996d806d4426b10098cd00d937bd~mv2.png/v1/fill/w_294,h_178,al_c,q_85,usm_0.66_1.00_0.01/TOP%2010.webp]
+$botTyping
