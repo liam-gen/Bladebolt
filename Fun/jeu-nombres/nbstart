@@ -1,0 +1,10 @@
+## Variables a avoir : nbpartie = 0, nb = 0
+
+$nomention
+$argsCheck[>2;..nbstart <nombre minimal> <nombre maximal>]
+$onlyAdmin[Tu n'as pas la permission]
+$description[Vous avez lancer une partie de nombre aléatoire !
+Pour entrer dans la partie faites `..nbjoin $random[111;999]`]
+$setServerVar[nbpartie;$random[111;999]]
+$setServerVar[nb;$random[$message[1];$message[2]]]
+$suppressErrors[Une erreur s'est produite ! A savoir : Veuillez entrer **que des nombres** sans la commande, vous ne pouvez pas faire ..nbstart 1 1, si le bug persiste merci de rejoindre le support ! ]
